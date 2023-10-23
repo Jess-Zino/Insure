@@ -1,0 +1,303 @@
+/*Importing Fonts Starts*/
+@import url('https://fonts.googleapis.com/css2?family=Borel&family=Karla:ital,wght@0,400;0,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+/*Importing Fonts ends*/
+
+
+/*Declaring variables Starts*/
+:root{
+  --DarkViolet: hsl(256, 26%, 20%);
+  --GrayishBlue: hsl(216, 30%, 68%);
+  --VeryDarkViolet: hsl(270, 9%, 17%);
+  --DarkGrayishViolet: hsl(273, 4%, 51%);
+  --VeryLightGray: hsl(0, 0%, 98%);
+  --bodyFont:"DM Serif Display";
+  --headFont:"Karla";
+}
+/*Declaring variables Ends*/
+
+
+/*General Styling Starts*/
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+body{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+button{
+  background-color: transparent;
+  outline:none;
+  border: none;
+  color: var(--VeryLightGray);
+  font-family: var(--headFont);
+  width: 145px;
+  padding: 10px;
+  border: 2px solid var(--VeryLightGray);
+}
+/*General Styling  Ends*/
+
+
+/*Header Styling Starts*/
+header{
+  height:140vh;
+  width: 100%;
+}
+
+/*Navbar Styling Starts*/
+nav{
+  height: 10vh;
+  display: flex; 
+  width: 80%;
+  flex-direction: row;
+  align-items:center ;
+  justify-content: space-between ;
+  background-color: var(--VeryLightGray);
+ margin: 0 auto;
+  z-index: 100;
+}
+nav img{
+  width: 10%;
+  height: 3vh;
+}
+nav ul{
+  display: flex; 
+  flex-direction: row;
+  justify-content: space-evenly ;
+  align-items: center;
+  text-transform: uppercase;
+  font-family: var(--headFont);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--DarkGrayishViolet);
+
+}
+nav ul li{
+  padding-right: 20px;
+}
+nav ul li:last-child{
+  background-color: transparent;
+padding-right: 0;
+  color: var(--VeryDarkViolet);
+  font-family: var(--headFont);
+ 
+  padding: 10px 20px 10px 20px;
+  border: 1.9px solid var(--VeryDarkViolet);
+}
+/*Navbar Styling ends*/
+
+/*Banner Styling Starts*/
+.banner {
+  background-color: var(--DarkViolet);
+  height: 80vh;
+  display: flex;
+  flex-direction: row;
+ 
+}
+.left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--VeryLightGray);
+  padding: 50px 50px 0px 190px;
+  gap: 10px;
+}
+.left  h1{
+  align-content: first baseline;
+  overflow-y: hidden;
+  justify-self: center;
+  font-family: var(--bodyFont);
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 65px;
+  padding-right: 100px;
+}
+.left p{
+  line-height: 30px;
+  font-family: var(--headFont);
+  font-weight: 400;
+  font-size: 16px;
+  padding-right: 10px;
+  margin-bottom: 20px;
+}
+.left .leftFloater{
+  position: absolute;
+  top: 70%;
+  left: 0%;
+}
+.right
+{
+  flex: 1;
+display: flex;
+justify-content: flex-end;
+}
+.rightFloater{
+  position: relative;
+  right: 0%;
+  z-index: 0;
+  bottom: 13%;
+
+  
+}
+.bannerPix{
+  position: absolute;
+  width: 35%;
+  top: 20%;
+  z-index: 1;
+  right: 10%;
+
+}
+
+/*Banner Styling Ends*/
+/*Header Styling Ends*/
+
+/*Main Styling Starts*/
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 200px;
+  margin-bottom: 200px;
+}
+.about{
+  width: 80%;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+ justify-content: center;
+ align-self: center;
+ margin: 0 auto;
+ gap: 60px;
+ margin: 0 auto;
+ 
+
+}
+.about h1{
+  font-size: 60px;
+  text-align: left;
+  color: var(--VeryDarkViolet);
+}
+.container{
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+ 
+}
+.container .feature{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.container .feature img{
+  width: 80px;
+}
+.title {
+  color: var(--VeryDarkViolet);
+  font-size: 25px;
+  font-family: var(--bodyFont);
+  font-weight: 400;
+}
+.about-text{
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--DarkGrayishViolet);
+  font-family: var(--headFont);
+}
+/*Main Styling Ends*/
+
+/*Find Out Styling Starts*/
+.find{
+  background-color: var(--DarkViolet);
+  width: 80%;
+  height: 35vh;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  align-items:center;
+  
+
+}
+.tag{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.find .tag h2{
+font-size: 50px;
+font-family: var(--bodyFont);
+font-weight: 400;
+color: var(--VeryLightGray);
+}
+.howWe{
+  position:absolute;
+  right: 10%;
+  width: 28.7%;
+}
+/*Find Out Styling Ends*/
+
+
+/*Footer Styling Starts*/
+footer{
+
+  background-color: var(--VeryLightGray);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 70vh;
+  margin: 0 auto;
+  padding: 60px 120px 0px 120px;
+  gap: 40px;
+}
+.media{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+ 
+}
+.handles{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.links{
+  font-family: var(--headFont);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.links div{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.links div ul li{
+  margin-bottom: 15px;
+  color: var(--VeryDarkViolet);
+  font-weight: 600;
+}
+.linkTitle{
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.linkTitle{
+  color: var(--DarkGrayishViolet);
+  font-size: 17px;
+}
+/*FooterStyling Ends*/
